@@ -11,10 +11,10 @@ const port = process.env.PORT || 3000;
 
 // Database configuration
 const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
+  user: 'postgres',
+  host: 'postgres',
   database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
+  password: 'admin'1023';,
   port: process.env.DB_PORT || 5432,
 });
 
