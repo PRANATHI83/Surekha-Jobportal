@@ -7,14 +7,14 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3017;
+const port = process.env.PORT || 3022;
 
 // Database configuration
 const pool = new Pool({
   user: 'postgres',
   host: 'postgres',
   database: process.env.DB_NAME,
-  password: 'admin234';,
+  password: 'admin234',
   port: process.env.DB_PORT || 5432,
 });
 
